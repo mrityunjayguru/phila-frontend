@@ -168,7 +168,7 @@ class MyApp extends StatelessWidget with WidgetsBindingObserver {
       routes: Routes.globalRoutes,
       navigatorKey: navigationService.navigationKey,
       builder: (context, mainChild) {
-        print("Hello updated value");
+        // print("Hello updated value");
         return MultiProvider(
           providers: [
             ChangeNotifierProvider<InitialDataService>(

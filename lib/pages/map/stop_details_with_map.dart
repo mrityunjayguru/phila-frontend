@@ -90,9 +90,9 @@ class _StopDetailsScreenWithMapState extends State<StopDetailsScreenWithMap>
     });
     _future = getStopDetailsList();
     await getRoutesList1("tour");
-    await getRoutesList1("fairmount_park_loop");
+    // await getRoutesList1("fairmount_park_loop");
     await getRoutesLatLong1("tour", "red");
-    await getRoutesLatLong1("fairmount_park_loop", "blue");
+    // await getRoutesLatLong1("fairmount_park_loop", "blue");
     await getPlacesList();
     setState(() {
       isMapLoading = false;

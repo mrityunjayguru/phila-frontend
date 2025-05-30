@@ -139,7 +139,7 @@ class _RoutesScreenState extends State<RoutesScreen> {
   var rightcount = 0;
   GestureDetector _buildListView(List<RouteModel>? routesList) {
     return GestureDetector(
-      onPanUpdate: (details) {
+      /*onPanUpdate: (details) {
         if (details.delta.dx > 0) {
           leftcount++;
 
@@ -165,7 +165,7 @@ class _RoutesScreenState extends State<RoutesScreen> {
             }
           }
         }
-      },
+      },*/
       child: ListView.builder(
           padding: EdgeInsets.all(10),
           shrinkWrap: true,
@@ -428,7 +428,7 @@ class _RoutesScreenState extends State<RoutesScreen> {
                   title: "Tour Route",
                   color: ThemeClass.redColor,
                   index: 1),
-              SizedBox(
+             /* SizedBox(
                 width: 10,
               ),
               _buildButtonblue(
@@ -442,7 +442,7 @@ class _RoutesScreenState extends State<RoutesScreen> {
                   },
                   title: "Fairmount Park Loop",
                   color: ThemeClass.skyblueColor,
-                  index: 2),
+                  index: 2),*/
             ],
           ),
         ),
@@ -455,16 +455,16 @@ class _RoutesScreenState extends State<RoutesScreen> {
               duration: const Duration(milliseconds: 500),
               curve: Curves.fastOutSlowIn,
               height: isSelect ? 3 : 0,
-              width: width * 0.5,
+              width: width,
               color: Colors.red,
             ),
-            AnimatedContainer(
+           /* AnimatedContainer(
               duration: const Duration(milliseconds: 500),
               curve: Curves.fastOutSlowIn,
               height: !isSelect ? 3 : 0,
               width: width * 0.5,
               color: Colors.blue,
-            )
+            )*/
           ],
         ),
       ],

@@ -16,7 +16,7 @@ class ConstantStrings{
   static const getGpsValidation="update-gps-validation";
   static const getTourList="get-landing-page";
   // static const base="http://65.1.85.176/";
-  static const base="https://citysightseeingphila.com/";
-  // static const base="http://philadelphia.moneytocode.com/";
+  // static const base="https://citysightseeingphila.com/";
+  static const base="http://3.110.130.233:8000/";
 
 }

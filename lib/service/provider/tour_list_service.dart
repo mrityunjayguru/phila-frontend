@@ -22,7 +22,7 @@ class TourListService with ChangeNotifier {
       notifyListeners();
       var response =
           await HttpService.httpGetWithoutToken(ConstantStrings.getTourList);
-      debugPrint("RES ${response.statusCode}");
+      debugPrint("RES ${response.statusCode} ${response.body}TOUR LISt");
       if (response.statusCode == 200) {
         var res = jsonDecode(response.body);
         if (res['success']) {

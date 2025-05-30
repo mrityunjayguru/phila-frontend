@@ -43,7 +43,7 @@ class _MainScreenState extends State<MainScreen> with RouteAware {
 
   @override
   void didPopNext() {
-    print("Hello called here");
+    // print("Hello called here");
     stopAllAudio();
     super.didPopNext();
   }

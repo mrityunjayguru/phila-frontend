@@ -4,9 +4,8 @@ import 'package:http/http.dart';
 import 'package:http/http.dart' as http;
 
 class HttpService {
-  // static const String API_BASE_URL = "http://philadelphia.moneytocode.com/api/customer/";
-  static const String API_BASE_URL = "https://citysightseeingphila.com/api/customer/";
-  // static const String API_BASE_URL = "http://65.1.85.176/api/customer/";
+  // static const String API_BASE_URL = "https://citysightseeingphila.com/api/customer/";
+  static const String API_BASE_URL = "http://3.110.130.233:8000/api/customer/";
 
   static Map<String, String> requestHeaders = {
     HttpHeaders.contentTypeHeader: 'application/json',

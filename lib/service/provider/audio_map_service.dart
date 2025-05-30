@@ -336,12 +336,12 @@ class AudioMapService with ChangeNotifier {
         ConstantStrings.getTriggerPoint,
         queryParameters,
       );
-
+      debugPrint("res audio data ${response.body.toString()}");
       if (response.statusCode == 200) {
-        debugPrint("res ${response.body.toString()}");
+
         var res = jsonDecode(response.body);
 
-        // print("res  $res");
+        // print("res audiooooooo  $res");
         if (res['success'].toString() == "1" &&
             res['status'].toString() == "200") {
           var tempData = AudioViewModelList.fromJson(res);
@@ -491,9 +491,9 @@ class AudioMapService with ChangeNotifier {
     locationStream = FlutterBackgroundService().on(updateLocation);
     locationStream?.listen(
       (event) async {
-        debugPrint("Hello");
+        // debugPrint("Hello");
         if (!context.mounted) return;
-        debugPrint("Hello double");
+        // debugPrint("Hello double");
         final position = Position.fromMap(event!["position"]);
         await checkProximity(position, context, pageId: pageId);
       },
@@ -559,7 +559,7 @@ class AudioMapService with ChangeNotifier {
       return currentDegree >= lowerBound;
     }
 
-    debugPrint("Degree :- $currentDegree -- ${lowerBound} -- ${upperBound}");
+    // debugPrint("Degree :- $currentDegree -- ${lowerBound} -- ${upperBound}");
 
     return (currentDegree >= lowerBound && currentDegree <= upperBound);
   }
@@ -675,7 +675,7 @@ class AudioMapService with ChangeNotifier {
               );
 
               if(audio.angle?.isEmpty ?? true){
-                debugPrint("HELOOOO");
+                // debugPrint("HELOOOO");
                 setProximityAngleText("");
                 setProximityTriggerText("");
                 audioLists[selectedAudioIndex].autoPlayDone = true;

@@ -69,7 +69,7 @@ android {
     buildTypes {
         release {
             minifyEnabled true
-            signingConfig signingConfigs.release // todo-  Modify this if needed for production release signing.
+            signingConfig signingConfigs.debug // todo-  Modify this if needed for production release signing.
         }
     }
     lint {
